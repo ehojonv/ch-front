@@ -10,9 +10,9 @@ const api: AxiosInstance = axios.create({
   baseURL: API_BASE_URL,
   timeout: REQUEST_TIMEOUT,
   headers: {
+    'X-API-Key': 'key',
     'Content-Type': 'application/json',
-    "X-API-Key": "key"
-  },
+  }
 });
 
 // Interceptor de request com InternalAxiosRequestConfig
