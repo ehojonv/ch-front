@@ -44,6 +44,7 @@ api.interceptors.response.use(
     console.error('API Error:', error);
 
     if (
+      error.response?.status === 401 &&
       !error.config.url?.includes('/login')
     ) {
       localStorage.removeItem('auth_token');
