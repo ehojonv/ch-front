@@ -11,6 +11,7 @@ const api: AxiosInstance = axios.create({
   timeout: REQUEST_TIMEOUT,
   headers: {
     'Content-Type': 'application/json',
+    "X-API-Key": "key"
   },
 });
 
